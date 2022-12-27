@@ -1,0 +1,21 @@
+.theFirst{
+    font-weight: 700;
+    border: 2px red solid;
+    font-size: larger;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.theSecond{
+    font-size: 0.5cm;
+    /* font: bold; */
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.theThird{
+   box-shadow: black 2px;
+   background-color: black;
+   color: white;
+   font-family: monospace; 
+}
