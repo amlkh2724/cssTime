@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.divOne {
+    width: 200px;
+    height: 180px;
+    border: black 5px solid;
+}
+
+.divTwo {
+    position: absolute;
+    /* position: relative; */
+    top: 120px;
+    left: 100px;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    border: black 5px solid;
+}
+
+.divThree {
+    position: absolute;
+    top: 240px;
+    width: 80vw;
+    height: 180px;
+    z-index: 5;
+    border: black 5px solid;
+}
+
+.divFour {
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    width: 20vw;
+    height: 80vh;
+    border: black 5px solid;
+}
