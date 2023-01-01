@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.postion {
+  position: fixed;
+  background-color: #333;
+  padding: 0 50px;
+  width: 100vw;
+}
+
+.title {
+  background-color: #333;
+  text-shadow: 6px 6px rgb(0, 0, 0);
+}
+
+
+#navbar a {
+  color: white;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 1.5rem;
+
+}
+
+.allText {
+  /* margin: 10px; */
+  padding: 90px;
+  background: radial-gradient(at bottom right, #f4f4f4 0, #f4f4f4 25px, rgba(244, 244, 244, 0.2) 25px, rgba(244, 244, 244, 0.2) 50px, rgba(244, 244, 244, 0.75) 50px, rgba(244, 244, 244, 0.75) 75px, rgba(244, 244, 244, 0.25) 75px, rgba(244, 244, 244, 0.25) 100px, rgba(244, 244, 244, 0.3) 100px, rgba(244, 244, 244, 0.3) 125px, rgba(244, 244, 244, 0.75) 125px, rgba(244, 244, 244, 0.75) 150px, rgba(244, 244, 244, 0.2) 150px, rgba(244, 244, 244, 0.2) 175px, transparent 175px, transparent 200px), radial-gradient(at top left, transparent 0, transparent 25px, rgba(244, 244, 244, 0.2) 25px, rgba(244, 244, 244, 0.2) 50px, rgba(244, 244, 244, 0.75) 50px, rgba(244, 244, 244, 0.75) 75px, rgba(244, 244, 244, 0.3) 75px, rgba(244, 244, 244, 0.3) 100px, rgba(244, 244, 244, 0.25) 100px, rgba(244, 244, 244, 0.25) 125px, rgba(244, 244, 244, 0.75) 125px, rgba(244, 244, 244, 0.75) 150px, rgba(244, 244, 244, 0.2) 150px, rgba(244, 244, 244, 0.2) 175px, #f4f4f4 175px, #f4f4f4 200px, transparent 200px, transparent 500px);
+  background-blend-mode: multiply;
+  background-size: 200px 200px, 200px 200px;
+  background-color: rgba(38, 35, 35, 0.5);
+}
+
+.allText {
+  text-align: center;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h2 {
+  color: #333;
+}
+
+#main-nav {
+  list-style-type: none;
+  border: 5px rgb(41, 38, 33) solid;
+
+}
+
+#main-nav li {
+  display: inline;
+  margin: 20px;
+}
+
+#main-nav a {
+  color: white;
+}
+
+#main-nav a:hover {
+  color: rgb(68, 51, 51);
+  cursor: pointer;
+
+
+}
+
+#main-nav strong {
+  color: #333;
+}
+
+.myhobby {
+  color: #333;
+  font-size: 0.6cm;
+  font-weight: bold;
+}
+
+.linkgit {
+  color: #333;
+  font-size: 0.6cm;
+
+}
+
+#aboutme a {
+  color: white;
+}
+
+#aboutme li {
+  list-style: none;
+}
+
+@media(min-width:500px) {
+
+  .logo {
+    padding: 0 37vw;
+  }
+
+  .postion {
+    font-size: x-small;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+  }
+
+  .postion ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+  }
+
+  #main-header {
+    margin-top: 70px;
+  }
+}
