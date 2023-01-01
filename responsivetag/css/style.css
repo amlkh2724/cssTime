@@ -1,25 +1,38 @@
-* {
-    padding: 0;
-    margin: 0;
+body {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
+/* Demo Specific Styles */
 body {
-    background-color: rgb(179, 158, 158);
+    line-height: 1.2;
+    padding: 0 2em;
     text-align: center;
 }
 
-h1 {
-    font-size: 5vw;
-}
+@media(min-width:500px) {
+    body {
+        background-color: aliceblue;
 
-@media (min-width: 500px) {
+    }
+
     h1 {
-        font-size: 32px;
+        font-size: 1.2rem;
+        font-size: 700;
+        font-weight: 200;
     }
 }
 
-@media (min-width: 900px) {
+@media(min-width:700px) {
     h1 {
-        font-size: 48px;
+        font-size: large;
+        font-weight: bold;
+    }
+}
+
+@media(min-width:800px) {
+    h1 {
+        font-size: large;
+        font-weight: lighter;
+        font-size: 3rem;
     }
 }
