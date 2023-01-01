@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aqua;
+    text-align: center;
+    /* font-size: small; */
+}
+
+/* mobile */
+@media screen and (max-width:500px) {
+    body {
+        text-align: center;
+        font-size: x-small;
+        background-color: red;
+    }
+}
+
+@media (min-width:501px) and (max-width:700px) {
+    body {
+        background-color: yellow;
+        padding-top: 100px;
+        font-size: small;
+        font-weight: 800;
+    }
+}
