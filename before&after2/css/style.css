@@ -1,0 +1,17 @@
+.box {
+    margin-left: 37vw;
+    background-color: red;
+    height: 400px;
+    width: 25%;
+    position: relative;
+}
+
+.box:after {
+    content: "";
+    background-color: purple;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
