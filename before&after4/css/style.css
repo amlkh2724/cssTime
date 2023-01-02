@@ -1,0 +1,35 @@
+.border {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: rgba(19, 17, 17, 0.352);
+  }
+  
+  .border:before,
+  .border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(250, 0, 0);
+  }
+  
+  .border:before {
+    left: 22px;
+    top: 20px;
+    border: 2px red solid;
+    width: 5px;
+    height: 10px;
+
+  }
+  
+  .border:after {
+    left: 152px;
+    top: 20px;
+    border: 2px red solid;
+    width: 5px;
+    height: 10px;
+  }
+  

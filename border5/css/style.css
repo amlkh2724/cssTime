@@ -1,0 +1,29 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin: 100px;
+}
+
+.tooltip .tooltiptext {
+    width: 130px;
+    font-size: small;
+    text-align: center;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -65px;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 22%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: yellow transparent transparent transparent;
+
+}
