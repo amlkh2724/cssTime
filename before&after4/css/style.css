@@ -1,43 +1,64 @@
-span{
-  height: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
+#content {
+  margin-top: 40px;
+  margin-left: 45vw;
+  background-color: black;
+  width: 140px;
+  height: 100px;
+  position: relative
 }
 
-.border {
-  text-align: center;
-    position: relative;
-    width: 200px;
-    height: 100px;
-    background-color: rgba(19, 17, 17, 0.352);
-  }
-  
-  .border:before,
-  .border:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 50%;
-    height: 50%;
-    background-color: rgb(250, 0, 0);
-  }
-  
-  .border:before {
-    left: 22px;
-    top: 20px;
-    border: 2px red solid;
-    width: 5px;
-    height: 10px;
+.span {
+  height: 100px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  }
-  
-  .border:after {
-    left: 152px;
-    top: 20px;
-    border: 2px red solid;
-    width: 5px;
-    height: 10px;
-  }
-  
+}
+
+#content:before,
+#content:after,
+#content>:first-child:before,
+#content>:first-child:after {
+  position: absolute;
+  content: ' ';
+  border-color: red;
+  /* or whatever colour */
+  border-style: solid;
+  /* or whatever style */
+}
+
+#content:before {
+  top: 12px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  border-width: 1px 0 0 1px
+}
+
+#content:after {
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  border-width: 1px 1px 0 0
+}
+
+
+#content>:first-child:before {
+  bottom: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+
+  border-width: 0 1px 1px 0
+}
+
+#content>:first-child:after {
+
+  bottom: 12px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  border-width: 0 0 1px 1px
+}
