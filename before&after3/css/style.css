@@ -15,7 +15,8 @@
     top: 0;
     left: 0;
 }
-/* .box:hover:after{
+
+.box:hover::after {
     content: "";
-    background-color: yellow;
-} */
+    background-color: #00F;
+}
