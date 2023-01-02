@@ -1,4 +1,12 @@
+span{
+  height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
 .border {
+  text-align: center;
     position: relative;
     width: 200px;
     height: 100px;

@@ -5,6 +5,7 @@
 }
 
 .tooltip .tooltiptext {
+    display: none;
     width: 130px;
     font-size: small;
     text-align: center;
@@ -26,4 +27,9 @@
     border-style: solid;
     border-color: yellow transparent transparent transparent;
 
+}
+
+.tooltip:hover .tooltiptext {
+    display: block;
+    opacity: 1;
 }
