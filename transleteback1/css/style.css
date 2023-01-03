@@ -1,0 +1,38 @@
+body {
+    font-size: 10px;
+}
+
+@keyframes width {
+    from {
+        width: 10rem;
+    }
+
+    to {
+        width: 0rem;
+    }
+}
+
+.back {
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    background-color: black;
+    animation-duration: 2s;
+    /* overflow: hidden; */
+}
+
+.back:before {
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    background-color: blue;
+    width: 10rem;
+    height: 10rem;
+    animation-duration: 2s;
+}
+
+.back:hover::before {
+    animation-name: width;
+    animation-duration: 2s;
+    background-color: rgb(0, 136, 255);
+}
