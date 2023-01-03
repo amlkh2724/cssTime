@@ -1,5 +1,5 @@
 .navbar {
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,6 +8,8 @@
 a {
     text-decoration: none;
     position: relative;
+    color: black;
+
 }
 
 a:after {
@@ -17,8 +19,8 @@ a:after {
     left: 0;
     right: 100%;
     border-bottom: 2px solid rgb(0, 0, 0);
-    transition: right 0.5s;
-}
+    transition:  all 0.5s ease-in-out;
+} 
 
 a:before {
     content: "";
@@ -27,18 +29,13 @@ a:before {
     right: 0;
     left: 100%;
     border-top: 2px solid rgb(9, 9, 10);
-    transition: left 0.5s;
+    transition: all 0.5s ease-in-out;
 }
 
 a:hover:after,
 a:hover:before {
     left: 0;
     right: 0;
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 li {

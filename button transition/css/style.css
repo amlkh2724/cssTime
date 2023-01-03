@@ -5,6 +5,8 @@ button {
     width: 100px;
     position: relative;
     background-color: #ffffff;
+    overflow: hidden;
+    z-index: 1;
 }
 
 @keyframes translated {
@@ -92,6 +94,29 @@ button {
     transform: rotateX(0);
 }
 
+.scale::after {
+    content: "Scale";
+    font-size: 4rem;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    transition: all 2s inherit ease-in;
+    opacity: 0;
+}
+
+.scale:hover:after {
+    font-size: 1rem;
+    opacity: 1;
+}
+
 .skew:before {
     content: "";
     position: absolute;
@@ -107,6 +132,6 @@ button {
     position: absolute;
     z-index: 21;
 
-    transform: skew(40deg, 5deg);
+    transform: skew(90deg, 90deg);
 
 }
