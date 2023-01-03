@@ -5,21 +5,27 @@
   color: white;
 }
 
+:root {
+  --light-color: #333;
+  --white-color: white;
+  --black-color: #333;
+}
+
 .postion {
   position: fixed;
-  background-color: #333;
+  background-color: var(--light-color);
   padding: 0 50px;
   width: 100vw;
 }
 
 .title {
-  background-color: #333;
+  background-color: var(--light-color);
   text-shadow: 6px 6px rgb(0, 0, 0);
 }
 
 
 #navbar a {
-  color: white;
+  color: var(--white-color);
 }
 
 #navbar h1 {
@@ -56,12 +62,12 @@
 }
 
 a {
-  color: #333;
+  color: var(--black-color);
   text-decoration: none;
 }
 
 h2 {
-  color: #333;
+  color: var(--black-color);
 }
 
 #main-nav {
@@ -76,7 +82,7 @@ h2 {
 }
 
 #main-nav a {
-  color: white;
+  color: var(--white-color);
 }
 
 #main-nav a:hover {
@@ -87,23 +93,23 @@ h2 {
 }
 
 #main-nav strong {
-  color: #333;
+  color: var(--black-color);
 }
 
 .myhobby {
-  color: #333;
+  color: var(--black-color);
   font-size: 0.6cm;
   font-weight: bold;
 }
 
 .linkgit {
-  color: #333;
+  color: var(--black-color);
   font-size: 0.6cm;
 
 }
 
 #aboutme a {
-  color: white;
+  color: var(--white-color);
 }
 
 #aboutme li {
